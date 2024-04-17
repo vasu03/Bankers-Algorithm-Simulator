@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banker's Algorithm</title>
+  <link rel="stylesheet" href="BankersAlgorithm.css">
+</head>
+<body>
+  <!-- Start from here -->
+  <header>
+    <h1>Banker's Algorithm</h1>
+  </header>
+  <main class="main-cont">
+    <!-- Total Instance Form Starts -->
+    <div class="input-cont">
+      <div class="proc-res-input">
+        <div class="">
+          <label for="numProcesses">No. of Processes: </label>
+          <input name="numProcesses" type="number" min="1" max="5" class="" id="numProcesses" required>
+        </div>
+        <div class="">
+          <label for="numResources">No. of Resources: </label>
+          <input name="numResources" type="number" min="1" max="3" class="" id="numResources" required>
+        </div>
+      </div>
+
+      <div class="res-inst-input">
+        <!-- Input for No. of Instance of each resource -->
+      </div>
+    </div>
+    <!-- Total Instance Form Ends -->
+    <div class="matrices-cont" id="matricesCont">
+      <!-- Allocation Matrix -->
+      <!-- Max Matrix -->
+      <!-- Need Matrix -->
+      <!-- Available Matrix -->
+
+    </div>
+
+    <!-- Algo Buttons Starts -->
+    <div class="action-btns">
+      <button type="button" class="" onclick="example()">Load Sample</button>
+      <button type="button" class="" onclick="generateMatrices()">Generate Matrices</button>
+      <button type="button" class="" onclick="run_algorithm()">Generate Sequence</button>
+      <button type="button" class="" onclick="reset()">Reset Matrices</button>
+    </div>
+    <!-- Algo Buttons Ends -->
+
+    <!-- Process Sequence Starts -->
+    <div class="proc-seq-chart">
+        <h4>Process Sequence :</h4>
+        <div class="proc-seq">
+          <!-- Processes -->
+        </div>
+      </div>
+    </div>
+    <div class="alert-msg"></div>
+    <!-- Process Sequence Ends -->
+  </main>
+</body>
+<script src="BankersAlgorithm.js"></script>
+</html>
